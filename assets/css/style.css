@@ -1,0 +1,50 @@
+.bg-kv{
+  background: url('../img/hill.jpg') no-repeat center / cover;
+  height: 100vh;
+  position: relative;
+}
+
+header{
+  padding: 20px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  height: 32px;
+  width: auto;
+}
+
+.header-right ul{
+  display: flex;
+}
+
+.header-right li{
+  margin-left: 60px;
+  font-size: 20px;
+}
+
+.header-right a{
+  color: white;
+  text-decoration: none;
+}
+
+.heading-block{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.heading-block h1{
+  font-size: 120px;
+  width: 900px;
+}
+
+.heading-block p{
+  font-size: 26px;
+  margin-top: 30px;
+}
