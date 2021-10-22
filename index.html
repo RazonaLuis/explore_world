@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="zxx">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +9,20 @@
   <title>Explore world</title>
 </head>
 <body>
-  <div class="bg-kv">
+  <div class="background-img">
     <header>
       <div class="header-left">
         <img src="./assets/img/logo-white.png" alt="logo" class="logo">
       </div>
+      <input type="checkbox" id="hamburger">
+      <label class="hamburger" for="hamburger">
+        <span></span>
+      </label>
       <nav class="header-right">
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Plan</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#plan">Plan</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -27,5 +31,49 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </section>
   </div>
+  <main>
+    <section id="about" class="block-section">
+      <h2>About</h2>
+      <div class="container">
+        <img src="./assets/img/placeholder.png" alt="img">
+        <section class="description">
+          <h3 class="description-title">Some text</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quis maiores dolores veniam placeat maxime aut soluta in, aliquid, culpa quae fugit, accusantium vel. Labore nemo cumque laborum excepturi quasi!<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In corrupti qui nesciunt tenetur perspiciatis velit quis esse ad culpa ipsum nam accusamus, eveniet optio reprehenderit iusto unde nobis deserunt magnam.
+          </p>
+        </section>
+      </div>
+    </section>
+    <section id="plan" class="block-section">
+      <h2>Plan</h2>
+      <div class="container">
+        <article class="card">
+          <h3 class="card-title">Free</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quis maiores dolores veniam placeat maxime aut soluta in, aliquid, culpa quae fugit, accusantium vel. Labore nemo cumque laborum excepturi quasi!</p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">Standard</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quis maiores dolores veniam placeat maxime aut soluta in, aliquid, culpa quae fugit, accusantium vel. Labore nemo cumque laborum excepturi quasi!</p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">Pro</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quis maiores dolores veniam placeat maxime aut soluta in, aliquid, culpa quae fugit, accusantium vel. Labore nemo cumque laborum excepturi quasi!</p>
+        </article>
+      </div>
+    </section>
+    <section id="contact" class="block-section">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <textarea name="content" cols="30" rows="10"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p><small>&copy;</small> 2020 Website Title. All rights reserved</p>
+  </footer>
 </body>
 </html>
